@@ -1,11 +1,3 @@
-<?php
-/**
- * Autor: Rodrigo Chambi Q.
- * Mail:  filvovmax@gmail.com
- * web:   www.gitmedio.com
- */
-require_once 'determ.php';
-?>
 <!DOCTYPE html>
 		<html>
 		<head>
@@ -17,21 +9,13 @@ require_once 'determ.php';
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 		</head>
-		<body>
+		<body style="background-color: purple">
+		<div>
+<div style="text-align: center;font-size: 45px;"><h1><font color="white">Social Group</font></h1></div>
+<div style="text-align: center;font-size: 18px;"><font color="white">Unete a mi grupo!!!</font></div>
+</div>
 		 <div id="Contenedor">
 		 <div class="Icon"><span class="glyphicon glyphicon-user"></span></div>
-		 <?php
-		 //Datos para ingresar
-		 //usuario:       marcos@gmail.com
-		 //Contraseña: test12345
-
-		 if(!empty($_POST['correo']) && !empty($_POST['contra'])){
-		 	$iniciar=new Login($_POST['correo'],$_POST['contra']);
-		 	$iniciar->Ingresar();
-             echo $iniciar->MostrarMsg();
-		 }
-         
-		 ?>
 		 <div class="ContentForm">
 		 	<form action="" method="post" name="FormEntrar">
 		 		<div class="input-group input-group-lg">
@@ -50,9 +34,6 @@ require_once 'determ.php';
 		 </div>
 			
 		 </div>
-         <?php 
-
-          ?>
 		</body>
 		<!-- vinculando a libreria Jquery-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
